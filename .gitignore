@@ -1,0 +1,7 @@
+archive/
+prediction_history.csv
+catboost_info/
+__pycache__/
+*.pyc
+.streamlit/
+.DS_Store
