@@ -23,10 +23,8 @@ st.set_page_config(
 # ─────────────────────────────────────────────
 st.markdown("""
 <style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono&display=swap');
-
 /* ── Base ── */
-html, body, .stApp { background:#f7f8fa; color:#1a1f2e; font-family:'DM Sans',sans-serif; }
+html, body, .stApp { background:#f7f8fa; color:#1a1f2e; font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif; }
 
 /* ── Sidebar ── */
 [data-testid="stSidebar"] {
@@ -514,13 +512,13 @@ elif page == "📋  Model Details":
     st.markdown("---")
     st.markdown("#### 🖼️ Evaluation Graphs")
 
-    # ── UPDATE THESE PATHS ──
+    # Graphs are inside the graphs/ subfolder
     graph_paths = {
-        "Actual vs Predicted":         "actual_vs_predicted_nn.png",
-        "Feature Importance":          "catboost_feature_importance.png",
-        "Model Comparison Chart":      "model_comparison.png",
-        "Ensemble Comparison":         "ensemble_comparison.png",
-        "Training History":            "training_history.png",
+        "Actual vs Predicted":    "graphs/actual_vs_predicted_nn.png",
+        "Feature Importance":     "graphs/catboost_feature_importance.png",
+        "Model Comparison Chart": "graphs/model_comparison.png",
+        "Ensemble Comparison":    "graphs/ensemble_comparison.png",
+        "Training History":       "graphs/training_history.png",
     }
 
     cols = st.columns(2, gap="large")
